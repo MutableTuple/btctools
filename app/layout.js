@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         {/* Google Analytics */}
-        <GoogleAnalytics trackId="G-K65FJ371E3" />
+        <GoogleAnalytics gaId="G-K65FJ371E3" />
         {/* Replace with your GA4 tracking ID */}
         {/* Meta tags for SEO */}
         <link
