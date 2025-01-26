@@ -36,8 +36,6 @@ export default function ProboBitcoinCalculator() {
     }, 1000);
   };
 
-
-
   return (
     <>
       <div className="min-h-screen bg-white text-black flex flex-col items-center justify-center p-4">
@@ -146,38 +144,6 @@ export default function ProboBitcoinCalculator() {
           <QnA />
         </footer>
       </div>
-
-      {/* SEO-Optimized Meta Tags */}
-      <head>
-        <meta
-          name="description"
-          content="Use our Bitcoin Investment Calculator to find out potential profits and calculate the maximum payout based on your investment and stock price. Answers to common Bitcoin queries included."
-        />
-        <meta
-          name="keywords"
-          content="bitcoin, bitcoin price, bitcoin investment, bitcoin halving, bitcoin mining, bitcoin news, bitcoin stock, bitcoin to usd, bitcoin usd, bitcoin cash, bitcoin value, buy bitcoin, bitcoin calculator"
-        />
-        <meta name="robots" content="index, follow" />
-        <meta
-          property="og:title"
-          content="Probo Bitcoin Investment Calculator"
-        />
-        <meta
-          property="og:description"
-          content="Use our Bitcoin Investment Calculator to calculate your potential profit and maximum payout from your Bitcoin investment. Learn more about Bitcoin in our FAQ."
-        />
-        <meta property="og:image" content="path_to_image.jpg" />
-        <meta property="og:url" content="your_website_url" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Probo Bitcoin Investment Calculator"
-        />
-        <meta
-          name="twitter:description"
-          content="Calculate potential profits and maximum payouts from your Bitcoin investment with our easy-to-use calculator. Discover answers to Bitcoin questions."
-        />
-      </head>
     </>
   );
 }
