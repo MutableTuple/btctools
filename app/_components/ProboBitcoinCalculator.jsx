@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import QnA from "./QnA";
 
 // Spinner Component
 const Spinner = () => (
@@ -35,28 +36,7 @@ export default function ProboBitcoinCalculator() {
     }, 1000);
   };
 
-  const seoQuestions = [
-    "What is Bitcoin",
-    "How to Buy Bitcoin",
-    "Bitcoin Halving",
-    "How to Mine Bitcoin",
-    "Bitcoin Price",
-    "Bitcoin Investment",
-    "How Bitcoin Works",
-    "Bitcoin Price USD",
-    "Bitcoin News",
-    "Bitcoin ETF",
-    "Bitcoin Stock",
-    "Bitcoin to USD",
-    "Bitcoin USD",
-    "Bitcoin Value",
-    "Bitcoin Cash",
-    "Bitcoin Mining",
-    "Bitcoin Price Live",
-    "Bitcoin Price Chart",
-    "Bitcoin Chart",
-    "Bitcoin Halving Countdown",
-  ];
+
 
   return (
     <>
@@ -163,168 +143,7 @@ export default function ProboBitcoinCalculator() {
           <h2 className="text-xl font-semibold text-center mb-4 text-gray-800">
             Popular Bitcoin Queries and Answers
           </h2>
-          <div className="space-y-4">
-            {seoQuestions.map((question, index) => (
-              <div key={index} className="mb-4">
-                <h3 className="font-semibold text-lg text-blue-600">
-                  {question}
-                </h3>
-                <p className="text-gray-700">
-                  {question === "What is Bitcoin" && (
-                    <span>
-                      Bitcoin is a decentralized digital currency, without a
-                      central bank or single administrator, that can be sent
-                      from user to user on the peer-to-peer Bitcoin network
-                      without the need for intermediaries.
-                    </span>
-                  )}
-                  {question === "How to Buy Bitcoin" && (
-                    <span>
-                      You can buy Bitcoin through exchanges like Coinbase,
-                      Binance, or Kraken. After creating an account, you can
-                      deposit funds and purchase Bitcoin directly.
-                    </span>
-                  )}
-                  {question === "Bitcoin Halving" && (
-                    <span>
-                      Bitcoin Halving is an event that occurs approximately
-                      every four years, where the reward for mining Bitcoin is
-                      halved, reducing the number of new Bitcoins generated.
-                    </span>
-                  )}
-                  {question === "How to Mine Bitcoin" && (
-                    <span>
-                      Bitcoin mining involves using specialized hardware to
-                      solve complex cryptographic puzzles, securing the network
-                      and confirming transactions in exchange for newly minted
-                      Bitcoins.
-                    </span>
-                  )}
-                  {question === "Bitcoin Price" && (
-                    <span>
-                      The price of Bitcoin is highly volatile and fluctuates
-                      depending on market demand, news, and adoption. Check
-                      reliable cryptocurrency exchanges for the latest price.
-                    </span>
-                  )}
-                  {question === "Bitcoin Investment" && (
-                    <span>
-                      Bitcoin investment refers to buying and holding Bitcoin as
-                      a long-term investment. However, it's important to
-                      consider the volatility and risks involved.
-                    </span>
-                  )}
-                  {question === "How Bitcoin Works" && (
-                    <span>
-                      Bitcoin operates on a decentralized peer-to-peer network
-                      that allows for secure, transparent, and irreversible
-                      transactions using blockchain technology.
-                    </span>
-                  )}
-                  {question === "Bitcoin Price USD" && (
-                    <span>
-                      The price of Bitcoin (BTC) in USD varies constantly. You
-                      can check the real-time price on popular cryptocurrency
-                      platforms like Coinbase, Binance, or Kraken.
-                    </span>
-                  )}
-                  {question === "Bitcoin News" && (
-                    <span>
-                      Bitcoin news refers to the latest updates about Bitcoin's
-                      market, technology, regulations, and other developments.
-                      Stay up-to-date with news sources like CoinDesk,
-                      CoinTelegraph, or Bitcoin Magazine.
-                    </span>
-                  )}
-                  {question === "Bitcoin ETF" && (
-                    <span>
-                      A Bitcoin ETF (Exchange-Traded Fund) is a financial
-                      product that allows investors to buy Bitcoin through
-                      traditional stock markets. It provides exposure to Bitcoin
-                      without directly purchasing or storing the digital asset.
-                    </span>
-                  )}
-                  {question === "Bitcoin Stock" && (
-                    <span>
-                      Bitcoin stock refers to stocks of companies that are
-                      involved with Bitcoin or blockchain technology. It’s
-                      different from buying Bitcoin directly, as you’re
-                      purchasing shares of the company that works with Bitcoin.
-                    </span>
-                  )}
-                  {question === "Bitcoin to USD" && (
-                    <span>
-                      Bitcoin to USD refers to the conversion of Bitcoin to
-                      United States Dollars. This exchange rate fluctuates based
-                      on market demand and supply. You can check the live
-                      exchange rate on platforms like CoinMarketCap.
-                    </span>
-                  )}
-                  {question === "Bitcoin USD" && (
-                    <span>
-                      Bitcoin USD is the value of one Bitcoin expressed in
-                      United States Dollars. The value of Bitcoin fluctuates and
-                      can be checked in real-time through exchange platforms and
-                      cryptocurrency data aggregators.
-                    </span>
-                  )}
-                  {question === "Bitcoin Value" && (
-                    <span>
-                      The value of Bitcoin is determined by the market price and
-                      is influenced by supply, demand, global adoption, and
-                      macroeconomic factors. Its value can be highly volatile.
-                    </span>
-                  )}
-                  {question === "Bitcoin Cash" && (
-                    <span>
-                      Bitcoin Cash (BCH) is a peer-to-peer electronic cash
-                      system that aims to allow fast, low-cost transactions. It
-                      was created as a fork from Bitcoin in 2017.
-                    </span>
-                  )}
-                  {question === "Bitcoin Mining" && (
-                    <span>
-                      Bitcoin mining is the process of using computing power to
-                      solve complex mathematical problems and validate Bitcoin
-                      transactions. Miners are rewarded with new Bitcoins for
-                      their work.
-                    </span>
-                  )}
-                  {question === "Bitcoin Price Live" && (
-                    <span>
-                      Bitcoin's live price refers to the current market price of
-                      Bitcoin in real-time. You can find this information on
-                      cryptocurrency exchange websites like Binance, Coinbase,
-                      or Kraken.
-                    </span>
-                  )}
-                  {question === "Bitcoin Price Chart" && (
-                    <span>
-                      A Bitcoin price chart shows the historical price movements
-                      of Bitcoin over time. It’s often used by traders to
-                      analyze market trends and predict future price movements.
-                    </span>
-                  )}
-                  {question === "Bitcoin Chart" && (
-                    <span>
-                      Bitcoin charts visually represent Bitcoin’s price and
-                      trading volume over specific time frames. Traders use them
-                      to understand market trends and make informed decisions.
-                    </span>
-                  )}
-                  {question === "Bitcoin Halving Countdown" && (
-                    <span>
-                      Bitcoin halving is an event that occurs every four years,
-                      reducing the block reward miners receive by half. This
-                      event impacts Bitcoin's supply and, in turn, its price.
-                      You can find countdown timers for the next halving event
-                      online.
-                    </span>
-                  )}
-                </p>
-              </div>
-            ))}
-          </div>
+          <QnA />
         </footer>
       </div>
 
